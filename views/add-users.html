@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-users</title>
+    <link rel="stylesheet" href="/addusers.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-item-list">
+                <li class="header-item"><a href="/"> Bosh sahifa</a></li>
+                <li class="header-item"><a href="/add-users">Add-users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <h1>Add-users</h1>
+        <form action="/users" class="add-users-form" method="post">
+            <label class="label">Username:
+
+
+            
+            </label>
+            <div class="input-add">
+                
+                <input type="text"  class="form-control" name="username">
+            </div>
+            <label class="label">Email:</label>
+            <div class="input-add">
+               
+                <input type="email" class="form-control" name="email">
+            </div>
+            <label class="label">Age:</label>
+            <div class="input-add">
+               
+                <input type="number"  class="form-control" name="age">
+            </div>
+            <div class='users-button'>
+                <button type="submit" class="btn" name="submit"> send</button>
+            </div>
+
+
+        </form>
+
+    </main>
+</body>
+</html>

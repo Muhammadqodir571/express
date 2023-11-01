@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.gares-nav{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(15, 240, 165);
+    
+    
+
+}
+.list{
+   
+    margin:0;
+    padding: 2rem;
+   
+  display: flex;
+    list-style: none;
+  
+}
+.item-list{
+    margin: 0;
+    padding: 0 2rem;
+    
+}
+.item-list a{
+    text-decoration: none;
+    color: aliceblue;
+   
+}
+.main-user{
+    padding: 3rem;
+}
