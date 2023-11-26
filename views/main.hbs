@@ -1,0 +1,19 @@
+    <main class="main-user">
+        <h3>Users list foud...</h3>
+        {{#if users}}
+        {{#each users}}
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" stayle="border-radius: 50%;">
+            
+                <div class="contianer">
+                    <h4><b>Name:{{username}}</b></h4>
+                    <h4><b>email:{{email}}</b></h4>
+                    <p>Age:{{age}}</p>
+
+                </div>
+            </div>
+        {{/each}}
+        {{else}}
+            <p>there is no user</p>
+        {{/if}}
+    </main>

@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add-users</title>
-    <link rel="stylesheet" href="/addusers.css">
-    
-</head>
-
+<%-include('includes/head.ejs')%>
 <body>
-    <header class="header">
-        <nav class="header-nav">
-            <ul class="header-item-list">
-                <li class="header-item"><a href="/"> Bosh sahifa</a></li>
-                <li class="header-item"><a href="/add-users">Add-users</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%-include('includes/navbar.ejs')%>
     <main >
         <h1>Add-users</h1>
         <form action="/users/users" class="add-users-form" method="post">
             <label class="label">Username:
-
-
-            
             </label>
             <div class="input-add">
                 
@@ -47,5 +28,6 @@
         </form>
 
     </main>
-</body>
-</html>
+
+
+<%-include('includes/footer.ejs')%>

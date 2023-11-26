@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        block styles
+        
+    body 
+        nav.gares-nav
+            ul.list
+                li.item-list
+                    a(href="/") Bosh saxifa
+                li.item-list
+                    a(href="/users/add-users") Add-users 
+        block  content

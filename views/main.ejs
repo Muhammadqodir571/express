@@ -1,0 +1,26 @@
+<%-include('includes/head.ejs')%>
+<body>
+    <%-include('includes/navbar.ejs')%>
+    <main class="main-user">
+        <h3>Users list foud...</h3>
+        <% if(users.length > 0) { %>
+            <%for(user of users){ %>
+                <div class="card">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" stayle="border-radius: 50%;">
+            
+                    <div class="contianer">
+                        <h4><b>Name:<%=user.username  %></b></h4>
+                        <h4><b>email:<%=user.email  %></b></h4>
+                        <p>Age:<%=user.age  %></p>
+
+                    </div>
+                </div>
+            <%} %>
+        <% } else{ %>
+       
+            <p>there is no user</p>
+        <%}%>
+    </main>
+
+
+<%-include('includes/footer.ejs')%>

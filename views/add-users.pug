@@ -1,0 +1,24 @@
+extends layouts/main-layout.pug
+block styles  
+    link(rel="stylesheet", href="/main.css")
+block content    
+    main 
+        h1  Add-users
+        form.add-users-form(action="/users/users", method="post")
+            label.label Username:
+            div.input-add
+                input.form-control(type="text", name="username")
+            label.label Email:
+            div.input-add
+                input.form-control(type="email", name="email")
+            label.label Age:
+            div.input-add
+                input.form-control(type="number", name="age")
+            div.users-button
+                button.btn(type="submit" , name="submit") Send
+            
+
+
+    
+
+    

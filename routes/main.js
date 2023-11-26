@@ -1,10 +1,17 @@
 const {Router} =require('express')
 const path =require('path')
+const {users}=require('./users')
+
 
 const routers=Router()
 
 routers.get('/',(req,res)=>{
-   res.sendFile(path.join(__dirname,'..','views','main.html'))
+
+   
+   res.render('main',{
+      title:"users list",
+      users
+   })
 })
 
 
